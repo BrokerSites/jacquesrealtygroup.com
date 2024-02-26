@@ -13,8 +13,8 @@
     <meta property="og:description" content="Jacques Realty Group - Moving You Forward">
     <meta property="og:image" content="https://caffertystuff.s3.us-east-2.amazonaws.com/jacques.png"> <!-- Replace with your image name -->
     <meta property="og:url" content="https://www.jacquesrealtygroup.com"> <!-- Replace with your page URL -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/contact.js"></script>  
+    <script src="https://brokersites.s3.us-east-2.amazonaws.com/js/contactform.js"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
     <meta name="description" content="Jacques Realty Group - Contact Us">
 </head>
 
@@ -106,7 +106,7 @@
             <span class="cs-topper">Contact Us</span>
             <h2 class="cs-title">Get In Touch</h2>
             <!--Form-->
-            <form class="cs-form" id="cs-form-401" name="Contact Form" method="post" onsubmit="submitToAPI(event)">
+            <form class="cs-form" id="cs-form" name="Contact Form" method="post" onsubmit="submitToAPI(event)">
                 <label class="cs-label">
                     Name
                     <input class="cs-input" required type="text" id="name" name="name" placeholder="Name">
@@ -132,20 +132,10 @@
                     <textarea class="cs-input cs-textarea" required name="Message" id="message" placeholder="Write message..."></textarea>
                 </label>
 
-                <div class="g-recaptcha" data-sitekey="6LetUvsmAAAAAKgAO9qPe_gPcnMZd3_xTsVw3z57" class="form-control" style="width:100%;" data-callback="ccb" data-expired-callback="onExpired"></div>
+                <div class="g-recaptcha" data-sitekey="6LdVznApAAAAAMyv788c6zf7RG5qaOclPo6xqGgZ" class="form-control" style="width:100%;" data-callback="ccb" data-expired-callback="onExpired"></div>
                 <input type="hidden" id="recaptcha-response" name="recaptcha-response" />
-                <script>
-                    function ccb(response) {
-                      $(':input[type="submit"]').prop('disabled', false);
-                      $('#recaptcha-response').val(response);
-                    }
-                
-                    function onExpired() {
-                      $('button[type="submit"]').prop('disabled', true);
-                      $('#recaptcha-response').val('');
-                    }
-                  </script>
-
+                <input type="hidden" id="destination" name="destination" value="contact@jacquesrealtygroup.com">
+                <script src="https://brokersites.s3.us-east-2.amazonaws.com/js/callback.js"> </script>
                 <button disabled class="cs-submit" type="submit">Send Message</button>
             </form>
         </div>
@@ -280,7 +270,7 @@
 </footer>
             
                                
-<script src="js/loader.js"></script>                          
+<script src="https://brokersites.s3.us-east-2.amazonaws.com/js/loader.js"></script>                         
 <script src="js/nav.js"></script>
 </body>
 </html>
