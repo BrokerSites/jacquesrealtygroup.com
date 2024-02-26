@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Share Previews (Open Graph Protocol) -->
+    <meta property="og:title" content="Jacques Realty Group">
+    <meta property="og:description" content="Jacques Realty Group - Moving You Forward">
+    <meta property="og:image" content="https://caffertystuff.s3.us-east-2.amazonaws.com/jacques.png"> <!-- Replace with your image name -->
+    <meta property="og:url" content="https://www.jacquesrealtygroup.com"> <!-- Replace with your page URL -->
+    <meta name="description" content="Jacques Realty Group - About Us">
+</head>
+
+<body>
+<!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+<header id="cs-navigation">
+    <!--Nav Logo-->
+    <a href="index.html" class="cs-logo" aria-label="back to home">
+        <img src="images/logolight.svg" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+    </a>
+    <!--Navigation List-->
+    <nav class="cs-nav" role="navigation">
+        <!--Mobile Nav Toggle-->
+        <button class="cs-toggle" aria-label="mobile menu toggle">
+            <div class="cs-box" aria-hidden="true">
+                <span class="cs-line cs-line1" aria-hidden="true"></span>
+                <span class="cs-line cs-line2" aria-hidden="true"></span>
+                <span class="cs-line cs-line3" aria-hidden="true"></span>
+            </div>
+        </button>
+        <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+        <div class="cs-ul-wrapper">
+            <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                <li class="cs-li">
+                    <a href="index.html" class="cs-li-link">
+                        Home
+                    </a>
+                </li>
+                <li class="cs-li">
+                    <a href="services.html" class="cs-li-link ">
+                        Services
+                    </a>
+                </li>
+                <li class="cs-li">
+                    <a href="https://ygl.is/98703" class="cs-li-link">
+                        Rental Search
+                    </a>
+                </li>
+                <li class="cs-li">
+                    <a href="about.html" class="cs-li-link cs-active">
+                        About Us
+                    </a>
+                </li>
+                <li class="cs-li">
+                    <a href="contact.html" class="cs-li-link">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <a href="contact.html" class="cs-button-solid cs-nav-button">Contact Us</a>
+    <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+    <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
+        <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+        <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+    </button> -->
+</header>
+
+<!-- ============================================ -->
+<!--                Small  Hero                   -->
+<!-- ============================================ -->
+
+<section id="hero-541">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Jacques Realty Group</h2>
+        </div>
+    </div>
+    <!--Background Color-->
+    <picture class="cs-background">
+        <source media="(min-width: 1024px)" srcset="images/win.webp">
+        <source media="(min-width: 601px)" srcset="images/win.webp">
+        <source media="(max-width: 600px)" srcset="images/win.webp">
+        <img aria-hidden="true" loading="lazy" decoding="async" src="images/win.webp" alt="meeting" width="275" height="132">
+    </picture>
+</section>
+                                
+<!-- ============================================ -->
+<!--                Side By Side                  -->
+<!-- ============================================ -->
+
+<section id="sbs-1010">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <picture class="cs-picture">
+                <!--Desktop-->
+                <source media="(min-width: 1024px)" srcset="images/handkeys.webp">
+                <!--Tablet-->
+                <source media="(min-width: 601px)" srcset="images/handkeys.webp">
+                <!--Mobile-->
+                <source media="(max-width: 600px)" srcset="images/handkeys.webp">
+                <img loading="lazy" decoding="async" src="images/handkeys.webp" alt="beef" width="522" height="461" aria-hidden="true">
+            </picture>
+            <img class="cs-seal" loading="lazy" decoding="async" src="images/ablogo.webp" alt="seal" width="190" height="182">
+        </div>
+        <div class="cs-content">
+            <h2 class="cs-title">Who We Are</h2>
+            <p class="cs-text">
+                Jacques Realty Group was founded in 2016 by industry experts with over 10+ years of experience, and we are dedicated to providing exceptional service and expertise to our clients throughout the greater Boston area. Our goal is to ensure that every client receives unparalleled support and guidance.                <!--Creates the space between p tags on mobile-->
+                <span class="cs-spacer"></span>
+                At Jacques Realty Group, we value relationships over transactions and believe in building lasting connections with our clients. Our commitment to excellence is reflected in our impressive 4.9/5 star average customer service rating, and we are honored to uphold our reputation each day.            </p>
+            <a href="contact.html" class="cs-button-solid">Contact Us</a>
+        </div>
+    </div>
+</section>
+                                
+                                
+                                
+<!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
+
+<footer id="cs-footer-841">
+    <div class="cs-container">
+        <!-- Logo Group -->
+        <div class="cs-logo-group">
+            <a aria-label="go back to home" class="cs-logo" href="index.html">
+                <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="images/logodark.svg" alt="logo" width="240" height="32">
+            </a>
+            <p class="cs-text">
+                Jacques Realty Group: Greater Boston real estate with a commitment to excellence - connecting clients with their dream homes and apartments            </p>
+            <div class="cs-social">
+                <a class="cs-social-link" aria-label="visit facebook profile" href="https://www.facebook.com/JacRealty/">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fface-white1.svg" alt="facebook" width="11" height="11">
+                </a>
+                <a class="cs-social-link" aria-label="visit twitter profile" href="https://x.com/JacRealtyGroup?s=20">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Ftwit-white1.svg" alt="twitter" width="6" height="11">
+                </a>
+                <a class="cs-social-link" aria-label="visit instagram profile" href="https://www.instagram.com/jacquesrealtygroup/">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Finsta-white1.svg" alt="instagram" width="11" height="11">
+                </a>
+                <a class="cs-social-link" aria-label="visit linkedin profile" href="https://www.linkedin.com/company/jacques-realty-group/">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="images/linkedin.svg" alt="instagram" width="11" height="11">
+                </a>
+                <a class="cs-social-link" aria-label="visit yelp profile" href="https://www.yelp.com/biz/jacques-realty-group-woburn">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="images/yelp.svg" alt="instagram" width="11" height="11">
+                </a>
+            </div>
+        </div>
+        <!-- Links -->
+        <div class="cs-ul-wrapper">
+            <span class="cs-header">Quick Links</span>
+            <ul class="cs-ul cs-ul-1">
+                <li class="cs-li">
+                    <a class="cs-link" href="index.html">Home</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="https://ygl.is/98703">Rental Search</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="services.html">Services</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="about.html">About</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="cs-ul-wrapper">
+            <!-- Contact Info -->
+            <span class="cs-header">Contact Information</span>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <a class="cs-link" href="tel:617-329-1778">
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fphone3-grey.svg" alt="phone icon" width="20" height="20">
+                        617-329-1778
+                    </a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="mailto:contact@jacquesrealtygroup.com">
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Femail3-grey.svg" alt="email icon" width="20" height="20">
+                        contact@jacquesrealtygroup.com
+                    </a>
+                </li>
+                <li class="cs-li">
+                    <!--Make this link go to the google page-->
+                    <a class="cs-link" href="contact.html" target="_blank">
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fpin3-grey.svg" alt="pin icon" width="20" height="20">
+                        100 Trade Center Suite G-700 <br> Woburn, MA 01801
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="cs-bottom">
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const currentYear = new Date().getFullYear();
+                const copyrightElement = document.getElementById("dynamicCopyright");
+                copyrightElement.innerHTML = `© Copyright ${currentYear} <a href="index.html" class="cs-credit-link" target="_blank">Jacques Realty Group</a>`;
+            });
+        </script>
+        
+        <span id="dynamicCopyright" class="cs-credit"></span>
+    </div>
+</footer>
+            
+                                
+                                
+<script src="js/nav.js"></script>
+</body>
+</html>
