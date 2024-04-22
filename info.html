@@ -4,18 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Info</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.svg">
     <meta name="description" content="Jacques Realty Group Website">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <meta property="og:title" content="Jacques Realty Group Website">
     <meta property="og:description" content="Structured, safe residence for men in recovery.">
     <meta property="og:image" content="https://cafftestbucket.s3.us-east-2.amazonaws.com/preview.webp">
-    <script src="https://brokersites.s3.us-east-2.amazonaws.com/js/contactform.js"> </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
 </head>
 
-<body>
+<body >
+
 
 <!-- ============================================ -->
 <!--                 Navigation                   -->
@@ -51,7 +51,7 @@
                         </a>
                     </li>
                     <li class="cs-li">
-                        <a href="info.html" class="cs-li-link ">
+                        <a href="info.html" class="cs-li-link cs-active">
                             Info
                         </a>
                     </li>
@@ -80,91 +80,48 @@
     </div>
 </header>
 
-    <!-- ============================================ -->
-    <!--                   Contact                    -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
 
-    <section id="contact-1389">
-        <div class="cs-container">
-            <div class="cs-content">
-                <span class="cs-topper">Contact Us</span>
-                <h2 class="cs-title">Get in Touch</h2>
-
-                <ul class="cs-ul">
-                    <li class="cs-li">
-                        <picture class="cs-icon-wrapper">
-                            <img aria-hidden="true"
-                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/phone-76.svg" alt="phone icon"
-                                class="cs-icon" width="40" height="40" decoding="async">
-                        </picture>
-                        <div class="cs-flex-group">
-                            <span class="cs-header">Phone</span>
-                            <a href="tel:617-329-1778
-                        " class="cs-link">+1 (617) 329-1778
-                            </a>
-                        </div>
-                    </li>
-                    <li class="cs-li">
-                        <picture class="cs-icon-wrapper">
-                            <img aria-hidden="true"
-                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/mail-76.svg" alt="address icon"
-                                class="cs-icon" width="40" height="40" decoding="async">
-                        </picture>
-                        <div class="cs-flex-group">
-                            <span class="cs-header">Email</span>
-                            <a href="mailto:contact@jacquesrealtygroup.com" class="cs-link">contact@jacquesrealtygroup.com</a>
-                        </div>
-                    </li>
-                    <li class="cs-li">
-                        <picture class="cs-icon-wrapper">
-                            <img aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/pin-76.svg"
-                                alt="address icon" class="cs-icon" width="40" height="40" decoding="async">
-                        </picture>
-                        <div class="cs-flex-group">
-                            <span class="cs-header">Address</span>
-                            <a href="https://maps.app.goo.gl/NxgzKJvy34NgSZu76" class="cs-link">100 Trade Center Suite G-700<br> Woburn, MA 01801</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <!--Form-->
-            <form class="cs-form" id="cs-form" name="Contact Form" method="post" onsubmit="submitToAPI(event)">
-                <label class="cs-label">
-                    Name
-                    <input class="cs-input" required type="text" id="name" name="name" placeholder="Name">
-                </label>
-                <label class="cs-label">
-                    Phone
-                    <input class="cs-input" required type="text" id="phone" name="phone" placeholder="Phone">
-                </label>
-                <label class="cs-label">
-                    Email
-                    <input class="cs-input" required type="text" id="email" name="email" placeholder="Email">
-                </label>
-                <label class="cs-label">
-                    What is your budget?
-                    <input class="cs-input" required type="text" id="budget" name="budget" placeholder="Budget">
-                </label>
-                <label class="cs-label cs-message">
-                    What are your desired locations?
-                    <textarea class="cs-input cs-textarea" required name="Locations" id="locations" placeholder="Location(s)"></textarea>
-                </label>
-                <label class="cs-label cs-message">
-                    Additional Info
-                    <textarea class="cs-input cs-textarea" required name="Message" id="message" placeholder="Write message..."></textarea>
-                </label>
-
-                <div class="g-recaptcha" data-sitekey="6LdVznApAAAAAMyv788c6zf7RG5qaOclPo6xqGgZ" class="form-control" style="width:100%;" data-callback="ccb" data-expired-callback="onExpired"></div>
-                <input type="hidden" id="recaptcha-response" name="recaptcha-response" />
-                <input type="hidden" id="destination" name="destination" value="contact@jacquesrealtygroup.com">
-                <script src="https://brokersites.s3.us-east-2.amazonaws.com/js/callback.js"> </script>
-                <button disabled class="cs-submit cs-button-solid" type="submit">Send Message</button>
-            </form>
+<section id="RTsbs-71">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" srcset="images/buyrentsell.webp">
+            <source media="(min-width: 601px)" srcset="images/buyrentsell.webp">
+            <img loading="lazy" decoding="async" src="images/buyrentsell.webp" alt="body builder" width="500" height="552" aria-hidden="true">
+        </picture>
+        <div class="cs-content">
+            <h2 class="cs-title">Rent, Buy, Sell</h2>
+            <p class="cs-text">
+                At Jacques Realty Group, we understand that making a decision about your home is one of the most significant choices you can make. Whether you're looking to rent a cozy apartment, buy your dream home, or sell a property, we're here to guide you every step of the way. Our dedicated team combines extensive market knowledge, top-notch negotiation skills, and a personalized approach to ensure your real estate journey is smooth and successful.
+            </p>
+            <a class="cs-button-solid" aria-label="learn more about our programs" href="https://ygl.is/JRG"  target="_blank" >Search Apartments</a>
         </div>
-    </section>
+    </div>
+</section>
+                                
+<!-- ============================================ -->
+<!--             Side By Side Reverse             -->
+<!-- ============================================ -->
 
+<section id="RTsbsr-71">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" srcset="images/invest.webp">
+            <source media="(min-width: 601px)" srcset="images/invest.webp">
+            <img loading="lazy" decoding="async" src="images/invest.webp" alt="body builder" width="500" height="552" aria-hidden="true">
+        </picture>
+        <div class="cs-content">
+            <h2 class="cs-title">Investment</h2>
+            <p class="cs-text">
+                Our goal is to build lasting relationships with investors, offering expertise in various property types from multi-family to commercial. Despite Boston's competitive real estate market, our advisors can craft a tailored investment plan to meet your goals. Contact us at contact@jacquesrealtygroup.com for a free consultation            </p>
+            <a class="cs-button-solid" aria-label="learn more about our programs" href="contact.html">Contact Us</a>
+        </div>
+    </div>
+</section>
 
-
+                                
 
 <!-- ============================================ -->
 <!--                  Footer                      -->
@@ -181,7 +138,7 @@
                     <a href="index.html" class="cs-link">Home</a>
                 </li>
                 <li class="cs-li">
-                    <a href="https://ygl.is/JRG" target="_blank"  class="cs-link">Search</a>
+                    <a href="https://ygl.is/JRG"  target="_blank"  class="cs-link">Search</a>
                 </li>
                 <li class="cs-li">
                     <a href="info.html" class="cs-link">Info</a>
@@ -238,8 +195,6 @@
     </div>
 </section>
 
-    <script src="js/nav.js"></script>
-    <script src="https://brokersites.s3.us-east-2.amazonaws.com/js/loader.js"></script>   
+<script src="js/nav.js"></script>
 </body>
-
 </html>
