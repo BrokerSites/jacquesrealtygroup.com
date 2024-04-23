@@ -2470,6 +2470,18 @@ font-family: 'Roboto', 'Arial', sans-serif !important;
       min-width: 12.5rem;
       border: none;
   }
+  #contact-1389 .cs-submit:disabled {
+    width: 100%;
+    background-color: gray;
+    min-width: 12.5rem;
+    border: none;
+}
+  #contact-1389 .cs-submit:disabled:hover {
+    cursor: not-allowed;
+  }
+  #contact-1389 .cs-submit:disabled:before {
+    background: none;
+  }
   #contact-1389 .cs-submit:hover {
       color: #fff;
       cursor: pointer;
