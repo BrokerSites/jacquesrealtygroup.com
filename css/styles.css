@@ -1137,7 +1137,6 @@ font-family: 'Roboto', 'Arial', sans-serif !important;
         width: 10rem;
         /* 202px - 248px */
         height: clamp(12.625rem, 25vw, 15.5rem);
-        background: #1a1a1a;
         opacity: 1;
         border-radius: 1rem;
         position: absolute;
@@ -1153,7 +1152,6 @@ font-family: 'Roboto', 'Arial', sans-serif !important;
         width: 10rem;
         /* 202px - 248px */
         height: clamp(12.625rem, 25vw, 15.5rem);
-        background: #1a1a1a;
         opacity: 1;
         border-radius: 1rem;
         position: absolute;
@@ -2473,7 +2471,7 @@ font-family: 'Roboto', 'Arial', sans-serif !important;
   #contact-1389 .cs-submit:disabled {
     width: 100%;
     background-color: gray;
-    min-width: 12.5rem;
+    width: fit-content;
     border: none;
 }
   #contact-1389 .cs-submit:disabled:hover {
