@@ -14,279 +14,208 @@
 
 </head>
 
-<body >
+<body>
 
-<!-- ============================================ -->
-<!--                 Navigation                   -->
-<!-- ============================================ -->
+    <!-- ============================================ -->
+    <!--                 Navigation                   -->
+    <!-- ============================================ -->
 
-<header style="position: relative; box-shadow: none;" id="cs-navigation">
-    <div class="cs-container">
-        <!--Nav Logo-->
-        <a href="" class="cs-logo" aria-label="back to home">
-            <img src="images/logo-nav.svg" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
-        </a>
-        <!--Navigation List-->
-        <nav class="cs-nav" role="navigation">
-            <!--Mobile Nav Toggle-->
-            <button class="cs-toggle" aria-label="mobile menu toggle">
-                <div class="cs-box" aria-hidden="true">
-                    <span class="cs-line cs-line1" aria-hidden="true"></span>
-                    <span class="cs-line cs-line2" aria-hidden="true"></span>
-                    <span class="cs-line cs-line3" aria-hidden="true"></span>
+    <header style="position: relative; box-shadow: none;" id="cs-navigation">
+        <div class="cs-container">
+            <!--Nav Logo-->
+            <a href="" class="cs-logo" aria-label="back to home">
+                <img src="images/logo-nav.svg" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+            </a>
+            <!--Navigation List-->
+            <nav class="cs-nav" role="navigation">
+                <!--Mobile Nav Toggle-->
+                <button class="cs-toggle" aria-label="mobile menu toggle">
+                    <div class="cs-box" aria-hidden="true">
+                        <span class="cs-line cs-line1" aria-hidden="true"></span>
+                        <span class="cs-line cs-line2" aria-hidden="true"></span>
+                        <span class="cs-line cs-line3" aria-hidden="true"></span>
+                    </div>
+                </button>
+                <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+                <div class="cs-ul-wrapper">
+                    <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                        <li class="cs-li">
+                            <a href="index.html" class="cs-li-link ">
+                                Home
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="https://ygl.is/JRG" class="cs-li-link ">
+                                Listings
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="info.html" class="cs-li-link ">
+                                Info
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="team.html" class="cs-li-link cs-active">
+                                Team
+                            </a>
+                        </li>
+                        <li class="cs-li cs-mobile-contact">
+                            <a href="contact.html" class="cs-li-link">Contact Us</a>
+                        </li>
+                    </ul>
                 </div>
-            </button>
-            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
-            <div class="cs-ul-wrapper">
-                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
-                    <li class="cs-li">
-                        <a href="index.html" class="cs-li-link ">
-                            Home
-                        </a>
-                    </li>
-                    <li class="cs-li">
-                        <a href="listings.html" class="cs-li-link ">
-                            Listings
-                        </a>
-                    </li>
-                    <li class="cs-li">
-                        <a href="form.html" class="cs-li-link ">
-                            10% Off
-                        </a>
-                    </li>
-                    <li class="cs-li">
-                        <a href="info.html" class="cs-li-link ">
-                            Info
-                        </a>
-                    </li>
-                    <li class="cs-li">
-                        <a href="team.html" class="cs-li-link cs-active">
-                            Team
-                        </a>
-                    </li>
-                    <li class="cs-li cs-mobile-contact">
-                        <a href="contact.html" class="cs-li-link">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <a href="contact.html" class="cs-button-solid cs-nav-button">Contact Us</a>
-        <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
-        <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
+            </nav>
+            <a href="contact.html" class="cs-button-solid cs-nav-button">Contact Us</a>
+            <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+            <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
             <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
             <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
         </button> -->
-    </div>
-</header>
-
-<!-- ============================================ -->
-<!--                Meet The Team                 -->
-<!-- ============================================ -->
-
-<section id="meet-team-1437">
-    <div class="cs-container">
-        <div class="cs-content">
-            <span class="cs-topper">Our Team</span>
-            <h2 class="cs-title">Meet Our Agents</h2>
-            <p class="cs-text">
-                Our Jacques Realty Group  professional agents are known for delivering a great experience and exceptional service, talk to one today and experience the Jacques Realty Group difference yourself.
-            </p>
         </div>
-        <ul class="cs-card-group">
-            <li class="cs-item">
-                <picture class="cs-picture">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)"
-                            srcset="images/nophoto.webp">
-                    <!--Tablet and above Image-->
-                    <source media="(min-width: 601px)"
-                            srcset="images/nophoto.webp">
-                    <img loading="lazy" decoding="async"
-                            src="images/nophoto.webp" alt="Rental Agent"
-                            width="305" height="338">
-                </picture>
-                <div class="cs-info">
-                    <span class="cs-name">Peter Gagne</span>
-                      <span class="cs-job">Rental Agent</span>
-<span class="cs-job">peter@clubrealtyboston.com</span>
-<span class="cs-job">508-523-3851</span>
- 
-                </div>
-            </li>
-            <li class="cs-item">
-                <picture class="cs-picture">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)"
-                            srcset="images/nophoto.webp">
-                    <!--Tablet and above Image-->
-                    <source media="(min-width: 601px)"
-                            srcset="images/nophoto.webp">
-                    <img loading="lazy" decoding="async"
-                            src="images/nophoto.webp" alt="Rental Agent"
-                            width="305" height="338">
-                </picture>
-                <div class="cs-info">
-                    <span class="cs-name">Dyllan Pione</span>
-                      <span class="cs-job">Rental Agent</span>
-<span class="cs-job">dyllan@clubrealtyboston.com</span>
-<span class="cs-job">857-961-6344</span>
-  
-                </div>
-            </li>
-            <li class="cs-item">
-                <picture class="cs-picture">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)"
-                            srcset="images/nophoto.webp">
-                    <!--Tablet and above Image-->
-                    <source media="(min-width: 601px)"
-                            srcset="images/nophoto.webp">
-                    <img loading="lazy" decoding="async"
-                            src="images/nophoto.webp" alt="Rental Agent"
-                            width="305" height="338">
-                </picture>
-                <div class="cs-info">
-                    <span class="cs-name">Robinson Joaquin</span>
-                      <span class="cs-job">Rental Agent</span>
-<span class="cs-job">Robinson@clubrealtyboston</span>
-<span class="cs-job">617-519-3860</span>
-  
-                </div>
-            </li>
-            <li class="cs-item">
-                <picture class="cs-picture">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)"
-                            srcset="images/nophoto.webp">
-                    <!--Tablet and above Image-->
-                    <source media="(min-width: 601px)"
-                            srcset="images/nophoto.webp">
-                    <img loading="lazy" decoding="async"
-                            src="images/nophoto.webp" alt="Rental Agent"
-                            width="305" height="338">
-                </picture>
-                <div class="cs-info">
-                    <span class="cs-name">Kayla Shaw</span>
-                      <span class="cs-job">Rental Agent</span>
-<span class="cs-job">kshaw@clubrealtyboston.com</span>
-<span class="cs-job">312-315-3105</span>
- 
-                </div>
-            </li>
-            <li class="cs-item">
-                <picture class="cs-picture">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)"
-                            srcset="images/nophoto.webp">
-                    <!--Tablet and above Image-->
-                    <source media="(min-width: 601px)"
-                            srcset="images/nophoto.webp">
-                    <img loading="lazy" decoding="async"
-                            src="images/nophoto.webp" alt="Rental Agent"
-                            width="305" height="338">
-                </picture>
-                <div class="cs-info">
-                    <span class="cs-name">Elysia Cerasuolo</span>
-                      <span class="cs-job">Rental Agent</span>
-<span class="cs-job">elysia@clubrealtyboston.com</span>
-<span class="cs-job">978-502-7115</span>
-  
-                </div>
-            </li>
-            <li class="cs-item">
-                <picture class="cs-picture">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)"
-                            srcset="images/Greg.webp">
-                    <!--Tablet and above Image-->
-                    <source media="(min-width: 601px)"
-                            srcset="images/Greg.webp">
-                    <img loading="lazy" decoding="async"
-                            src="images/Greg.webp" alt="Rental Agent"
-                            width="305" height="338">
-                </picture>
-                <div class="cs-info">
-                    <span class="cs-name">Greg Herot</span>
-                      <span class="cs-job">Rental Agent</span>
-<span class="cs-job">gherot@clubrealtyboston.com</span>
-<span class="cs-job">617-903-0888</span>
-  
-                </div>
-            </li>
-        </ul>
-    </div>
-</section>
-                                
-                                
+    </header>
 
-<!-- ============================================ -->
-<!--                  Footer                      -->
-<!-- ============================================ -->
+    <!-- ============================================ -->
+    <!--                Meet The Team                 -->
+    <!-- ============================================ -->
 
-<section id="footer-1147">
-    <div class="cs-container">
-        <div class="cs-top">
-            <a aria-label="go back to home" class="cs-logo" href="">
-                <img class="cs-logo-img" loading="lazy" decoding="async" src="images/logo-foot.svg" alt="logo" width="168" height="48">
-            </a>
-            <ul class="cs-ul">
-                <li class="cs-li">
-                    <a href="index.html" class="cs-link">Home</a>
+    <section id="meet-us-1020">
+        <div class="cs-container">
+            <div class="cs-content">
+                <img class="cs-graphic" aria-hidden="true" loading="lazy" decoding="async"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/Ornament.svg" alt="chef" width="456"
+                    height="31">
+                <p class="cs-text">
+                    Meet our dedicated team of real estate professionals, each bringing unique expertise and a
+                    commitment to helping you find the perfect home or investment property.
+                </p>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 767px)" srcset="images/Chris.webp">
+                        <source media="(min-width: 768px)" srcset="images/Chris.webp">
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="images/Chris.webp" alt="chef"
+                            width="305" height="335">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-name">Christopher Jean</span>
+                        <span class="cs-job">President/Broker</span>
+                        <a href="tel:+16179522757"><span class="cs-job">(617) 952-2757</span></a>
+                        <a href="mailto:Chris@jacquesrealtygroup.com"><span
+                                class="cs-job">Chris@jacquesrealtygroup.com</span></a>
+                    </div>
                 </li>
-                <li class="cs-li">
-                    <a href="listings.html" class="cs-link">Search</a>
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 767px)" srcset="images/Greg.webp">
+                        <source media="(min-width: 768px)" srcset="images/Greg.webp">
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="images/Greg.webp" alt="chef"
+                            width="305" height="335">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-name">Greg Sajous</span>
+                        <span class="cs-job">Agent - Sales and Rentals</span>
+                        <a href="tel:+19789025004"><span class="cs-job">(978) 902-5004</span></a>
+                        <a href="mailto:gsaj102174@gmail.com  "><span class="cs-job">gsaj102174@gmail.com </span></a>
+                    </div>
                 </li>
-                <li class="cs-li">
-                    <a href="form.html" class="cs-link">10% off</a>
-                </li>
-                <li class="cs-li">
-                    <a href="info.html" class="cs-link">Info</a>
-                </li>
-                <li class="cs-li">
-                    <a href="team.html" class="cs-link">Team</a>
-                </li>
-                <li class="cs-li">
-                    <a href="contact.html" class="cs-link">Contact Us</a>
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 767px)" srcset="images/West.webp">
+                        <source media="(min-width: 768px)" srcset="images/West.webp">
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="images/West.webp" alt="chef"
+                            width="305" height="335">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-name">West Cineus</span>
+                        <span class="cs-job">Agent - Sales</span>
+                        <a href="tel:+16178630036"><span class="cs-job">(617) 863-0036</span></a>
+                        <a href="mailto:brooklynoaksllc@gmail.com"><span
+                                class="cs-job">brooklynoaksllc@gmail.com</span></a>
+                    </div>
                 </li>
             </ul>
         </div>
-        <div class="cs-bottom">
-            <!--Social-->
-            <ul class="cs-social">
-                <li class="cs-social-li">
-                    <a href="" class="cs-social-link" aria-label="facebook" target="_blank" rel="noopener">
-                        <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/facebook-white.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
-                    </a>
-                </li>
-                <li class="cs-social-li">
-                    <a href="" class="cs-social-link" aria-label="twitter" target="_blank" rel="noopener">
-                        <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/twitter-white.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
-                    </a>
-                </li>
-                <li class="cs-social-li">
-                    <a href="" class="cs-social-link" aria-label="instagram" target="_blank" rel="noopener">
-                        <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram-transparent.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
-                    </a>
-                </li>
-                <li class="cs-social-li">
-                    <a href="" class="cs-social-link" aria-label="twitter" target="_blank" rel="noopener">
-                        <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/youtube-transparent2.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
-                    </a>
-                </li>
-            </ul>
+    </section>
+
+
+
+
+    <!-- ============================================ -->
+    <!--                  Footer                      -->
+    <!-- ============================================ -->
+
+    <section id="footer-1147">
+        <div class="cs-container">
+            <div class="cs-top">
+                <a aria-label="go back to home" class="cs-logo" href="">
+                    <img class="cs-logo-img" loading="lazy" decoding="async" src="images/logo-foot.svg" alt="logo"
+                        width="168" height="48">
+                </a>
+                <ul class="cs-ul">
+                    <li class="cs-li">
+                        <a href="index.html" class="cs-link">Home</a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="https://ygl.is/JRG" class="cs-link">Search</a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="info.html" class="cs-link">Info</a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="team.html" class="cs-link">Team</a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="contact.html" class="cs-link">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
             <div class="cs-bottom">
-                <span class="cs-copyright">© Copyright 
-                    <script>document.write(new Date().getFullYear());</script> - 
-                    <a class="cs-copyright-link" href="">Jacques Realty Group</a>
-                </span>
+                <!--Social-->
+                <ul class="cs-social">
+                    <li class="cs-social-li">
+                        <a href="" class="cs-social-link" aria-label="facebook" target="_blank" rel="noopener">
+                            <img class="cs-social-icon cs-default"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/facebook-white.svg" alt="icon"
+                                loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                        </a>
+                    </li>
+                    <li class="cs-social-li">
+                        <a href="" class="cs-social-link" aria-label="twitter" target="_blank" rel="noopener">
+                            <img class="cs-social-icon cs-default"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/twitter-white.svg" alt="icon"
+                                loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                        </a>
+                    </li>
+                    <li class="cs-social-li">
+                        <a href="" class="cs-social-link" aria-label="instagram" target="_blank" rel="noopener">
+                            <img class="cs-social-icon cs-default"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram-transparent.svg"
+                                alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                        </a>
+                    </li>
+                    <li class="cs-social-li">
+                        <a href="" class="cs-social-link" aria-label="twitter" target="_blank" rel="noopener">
+                            <img class="cs-social-icon cs-default"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/youtube-transparent2.svg"
+                                alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                        </a>
+                    </li>
+                </ul>
+                <div class="cs-bottom">
+                    <span class="cs-copyright">© Copyright
+                        <script>document.write(new Date().getFullYear());</script> -
+                        <a class="cs-copyright-link" href="">Jacques Realty Group</a>
+                    </span>
+                </div>
             </div>
         </div>
-    </div>
-    <!--Background-->
-    <div class="cs-background">
-    </div>
-</section>
+        <!--Background-->
+        <div class="cs-background">
+        </div>
+    </section>
 
-<script src="js/nav.js"></script>
+    <script src="js/nav.js"></script>
 </body>
+
 </html>
