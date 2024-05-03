@@ -2217,6 +2217,17 @@ font-family: 'Roboto', 'Arial', sans-serif !important;
   }
 }
 
+.icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+.contact-icon{
+    display: flex;
+    align-items: center;
+    gap: 0.em;
+}
                               
                                 
 /*-- -------------------------- -->
