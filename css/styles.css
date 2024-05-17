@@ -1858,8 +1858,16 @@ font-family: 'Roboto', 'Arial', sans-serif !important;
 <---       Side By Side         -->
 <--- -------------------------- -*/
 
+.cs-buttons{
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 1rem; 
+}
+
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
+
+
   #RTsbs-71,
   #RTsbsr-71,
   #RTsbst-71 {
