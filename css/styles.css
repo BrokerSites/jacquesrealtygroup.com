@@ -2616,3 +2616,196 @@ font-family: 'Roboto', 'Arial', sans-serif !important;
 }
 
                               
+
+/* Homepage: featured property hero and secondary apartment search. */
+#featured-listing {
+    background: var(--primary);
+    color: #fff;
+}
+#featured-listing .featured-container {
+    max-width: 80rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, 0.45fr) minmax(0, 0.55fr);
+    align-items: center;
+}
+#featured-listing .featured-content {
+    padding: clamp(2rem, 4vw, 4rem);
+}
+#featured-listing .featured-brand {
+    margin: 0 0 2rem;
+    color: #d9e0f0;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+#featured-listing .featured-label {
+    display: inline-block;
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid #7282aa;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+#featured-listing h1 {
+    margin: 0 0 1rem;
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+    font-weight: 700;
+    line-height: 1.06;
+    letter-spacing: -0.035em;
+}
+#featured-listing .featured-location {
+    margin: 0 0 1.5rem;
+    color: #d9e0f0;
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+#featured-listing .featured-type {
+    margin: 0 0 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+#featured-listing .featured-facts {
+    display: flex;
+    gap: 2rem;
+    margin: 0 0 1.5rem;
+    padding: 0 0 1.5rem;
+    border-bottom: 1px solid #45577f;
+}
+#featured-listing .featured-facts > div {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 0.25rem;
+}
+#featured-listing dt {
+    color: #d9e0f0;
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+#featured-listing dd {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+#featured-listing .featured-price {
+    margin: 0 0 1.5rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+#featured-listing .featured-photo {
+    display: block;
+    width: 100%;
+    line-height: 0;
+}
+/* Natural image proportions keep the entire property visible at every width. */
+#featured-listing .featured-photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+#featured-listing .featured-button,
+#apartment-search .apartment-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    min-height: 3.5rem;
+    padding: 0.875rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5;
+    text-decoration: none;
+    transition: background-color 0.2s, color 0.2s;
+}
+#featured-listing .featured-button {
+    background: #fff;
+    color: var(--primary);
+}
+#featured-listing .featured-button:hover {
+    background: #d9e0f0;
+}
+#featured-listing a:focus-visible,
+#apartment-search a:focus-visible {
+    outline: 3px solid var(--secondaryLight);
+    outline-offset: 5px;
+}
+#apartment-search {
+    padding: 2.5rem clamp(1.5rem, 4vw, 4rem);
+    background: #f3f5f9;
+    border-bottom: 1px solid #e2e6ee;
+}
+#apartment-search .apartment-container {
+    max-width: 72rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+#apartment-search .cs-topper {
+    margin: 0 0 0.5rem;
+    font-size: 0.75rem;
+}
+#apartment-search h2 {
+    margin: 0 0 0.5rem;
+    color: var(--primary);
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    line-height: 1.2;
+}
+#apartment-search p {
+    margin: 0;
+    color: var(--bodyTextColor);
+    line-height: 1.5;
+}
+#apartment-search .apartment-button {
+    flex-shrink: 0;
+    background: var(--primary);
+    color: #fff;
+}
+#apartment-search .apartment-button:hover {
+    background: #243c70;
+}
+@media only screen and (max-width: 63.9375rem) {
+    #featured-listing .featured-container {
+        grid-template-columns: 1fr;
+        max-width: 42rem;
+    }
+    #featured-listing .featured-photo {
+        grid-row: 1;
+    }
+    #featured-listing .featured-content {
+        padding: 2rem 1.5rem 2.5rem;
+    }
+    #featured-listing .featured-brand {
+        margin-bottom: 1.5rem;
+    }
+    #featured-listing h1 {
+        max-width: none;
+        font-size: clamp(2.5rem, 6vw, 3.5rem);
+    }
+    #featured-listing .featured-location {
+        margin-bottom: 1.5rem;
+    }
+    #featured-listing .featured-facts {
+        max-width: 24rem;
+    }
+}
+@media only screen and (max-width: 37.5rem) {
+    #apartment-search .apartment-container {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    #featured-listing .featured-button,
+    #apartment-search .apartment-button {
+        transition: none;
+    }
+}
